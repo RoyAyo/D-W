@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DEAD AND WOUNDED</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script type="text/javascript"></script>
+</head>
+<body>
+	<div id="container" class="container-fluid" style="width: 100%">
+		<div class="row" style="background: black;color: skyblue;">
+			<div class="col-lg-12" style="text-align: center;">
+				<h2 style="font-family: new-cursive;">DEAD AND WOUNDED <span style="font-size: 7pt;color: grey;float: right;">Deroy</span></h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12">
+				<button id="show_number" class="btn btn-success" style="margin-bottom: 2rem" onclick="shownumber()">Show my number</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-7">
+				<!--This is where the whole inputing goes on-->
+				<form class="form-group">
+					<input id="players_number" type="number" name="number" class="form-control" placeholder="Save Your number">
+					<input type="submit" value="players_number" class="btn btn-primary" id="submit" onclick="game()">
+				</form>
+				<form class="form-group" style="display: none;" id="ans">
+					<input class="form-control" type="text" name="Dead and wounded" id="daw" placeholder="use format xDyW">
+					<input type="submit" value="Answer" class="btn btn-primary" onclick="answer()">
+					<div id="com_query" style="font-size: 18pt;color: skyblue;"></div>
+				</form>
+
+			</div>
+			<div class="col-lg-5">
+				<!--This is where the results are displayed-->
+				<table class="table table-striped table-hover table-bordered">
+					<tr>
+						<th>Number</th>
+						<th>Computer</th>
+						<th>Player</th>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="D&D.js"></script>
+</body>
+</html>
